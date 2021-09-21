@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cristianjonhson/ProjectsReact/issues"
   },
-  "homepage": "https://github.com/cristianjonhson/ProjectsReact#readme"
+  "homepage": "https://github.com/cristianjonhson/ProjectsReact#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
