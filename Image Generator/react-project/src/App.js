@@ -20,7 +20,7 @@ function App() {
 
       <select>
         <option value="fire">Casa en llamas</option>
-        <option value="futurama">Futurama</option>
+        <option value="futurama">Futurama - Fry</option>
         <option value="history">History Channel</option>
         <option value="matrix">Matrix</option>
         <option value="raptor">Philosoraptor</option>
