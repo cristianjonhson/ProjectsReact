@@ -27,7 +27,7 @@ function App() {
         <option value="futurama">Futurama - Fry</option>
         <option value="history">History Channel</option>
         <option value="matrix">Matrix</option>
-        <option value="Philosoraptor">Philosoraptor</option>
+        <option value="philosoraptor">Philosoraptor</option>
         <option value="smart">Smart guy</option>
       </select>
 
