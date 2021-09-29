@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import './App.css'
+import '../App.css'
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
     <div classname="App" align="center">
       <h1>Generador de Imagenes</h1>
       <br></br>
-      <select  onChange={onChangeImagen} >
+      <select onChange={onChangeImagen} >
         <option >Seleccione una opcion..</option> 
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama - Fry</option>
