@@ -22,7 +22,7 @@ function App() {
     <div classname="App" align="center">
       <h1>Generador de Imagenes</h1>
 
-      <select>
+      <select  onChange={onChangeImagen} >
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama - Fry</option>
         <option value="history">History Channel</option>
@@ -48,7 +48,7 @@ function App() {
         <br></br>
         <span>{linea2}</span>
         <br></br>
-        <img onChange={onChangeImagen} src={"/img/"+ imagen +".jpg"} />
+        <img src={"./img/"+ imagen +".jpg"} />
         <br></br>
       </div>
     </div>
