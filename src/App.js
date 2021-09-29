@@ -2,7 +2,7 @@ import { React, useState } from "react";
 
 function App() {
 
-
+  const [imagen, setImagen] = useState("");
   const [linea1, setLinea1] = useState("");
   const [linea2, setLinea2] = useState("");
 
@@ -14,16 +14,20 @@ function App() {
     setLinea2(evento.target.value);
   };
 
+  const onChangeImagen = function (evento) {
+    setImagen(evento.target.value);
+  };
+
   return (
     <div classname="App" align="center">
       <h1>Generador de Imagenes</h1>
 
-      <select>
+      <select  onChange={onChangeImagen} >
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama - Fry</option>
         <option value="history">History Channel</option>
         <option value="matrix">Matrix</option>
-        <option value="raptor">Philosoraptor</option>
+        <option value="philosoraptor">Philosoraptor</option>
         <option value="smart">Smart guy</option>
       </select>
 
@@ -44,7 +48,7 @@ function App() {
         <br></br>
         <span>{linea2}</span>
         <br></br>
-        <img src="" />
+        <img src={"/img/"+ imagen +".jpg"} />
         <br></br>
       </div>
     </div>
