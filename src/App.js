@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import './App.css'
 
 function App() {
 
@@ -21,8 +22,9 @@ function App() {
   return (
     <div classname="App" align="center">
       <h1>Generador de Imagenes</h1>
-
+      <br></br>
       <select  onChange={onChangeImagen} >
+        <option >Seleccione una opcion..</option> 
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama - Fry</option>
         <option value="history">History Channel</option>
@@ -39,16 +41,15 @@ function App() {
       <input onChange={onChangeLinea2} type="text" placeholder="linea2"></input>
       <br></br>
       <br></br>
-      <button>Exportar</button>
-      <br></br>
-      <br></br>
-      <div>
+      <button>Exportar</button> 
+ 
+      <div className="meme">
         <span>{linea1}</span>
-        <br></br>
+        
         <br></br>
         <span>{linea2}</span>
         <br></br>
-        <img src={"/img/"+ imagen +".jpg"} />
+        <img alt=" " src={"/img/"+ imagen +".jpg"} />
         <br></br>
       </div>
     </div>
